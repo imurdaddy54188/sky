@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Neon Landing Page</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 8%;
+      position:fixed;
+      width:100%;
+      top:0;
+      backdrop-filter:blur(10px);
+      background:rgba(15,23,42,0.7);
+      z-index:1000;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+      color:#38bdf8;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#38bdf8;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:120px 20px;
+      background:
+      radial-gradient(circle at top left, #1e3a8a 0%, transparent 40%),
+      radial-gradient(circle at bottom right, #06b6d4 0%, transparent 40%);
+    }
+
+    .hero-content{
+      max-width:700px;
+    }
+
+    .hero h1{
+      font-size:64px;
+      margin-bottom:20px;
+      line-height:1.1;
+    }
+
+    .hero p{
+      font-size:20px;
+      color:#cbd5e1;
+      margin-bottom:35px;
+      line-height:1.6;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 35px;
+      background:#38bdf8;
+      color:#0f172a;
+      text-decoration:none;
+      border-radius:50px;
+      font-weight:bold;
+      transition:0.3s;
+      box-shadow:0 0 20px rgba(56,189,248,0.5);
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+      box-shadow:0 0 30px rgba(56,189,248,0.8);
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      padding:80px 8%;
+    }
+
+    .card{
+      background:#1e293b;
+      padding:30px;
+      border-radius:20px;
+      transition:0.3s;
+      border:1px solid rgba(255,255,255,0.1);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      border-color:#38bdf8;
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#38bdf8;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#94a3b8;
+      border-top:1px solid rgba(255,255,255,0.1);
+    }
+
+    @media(max-width:768px){
+      .hero h1{
+        font-size:42px;
+      }
+
+      nav{
+        display:none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">SKY.</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Create Something Amazing</h1>
+
+      <p>
+        A modern futuristic landing page made with pure HTML and CSS.
+        Clean design, neon glow, responsive layout.
+      </p>
+
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <section class="cards">
+
+    <div class="card">
+      <h3>Fast</h3>
+      <p>
+        Optimized and lightweight design for smooth performance.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Responsive</h3>
+      <p>
+        Looks great on desktop, tablet, and mobile devices.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Modern</h3>
+      <p>
+        Stylish neon UI with sleek animations and layout.
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 SKY. All rights reserved.
+  </footer>
+
+</body>
+</html>
